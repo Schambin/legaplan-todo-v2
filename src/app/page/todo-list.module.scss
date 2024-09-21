@@ -1,0 +1,97 @@
+@import './variables.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+    font-family: Inter Tight;
+    margin: 2.4rem 5.6rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid $border-main-gray;
+    max-width: 1328px;
+
+    .welcomeUser {
+        margin: 0 288px 0 372px;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 29.04px;
+        letter-spacing: -0.02em;
+    }
+
+    .todaysDate > time {
+        font-family: Inter Tight;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.36px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: $text-main-gray-dark;
+
+    }
+}
+
+.tasksContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2.4rem;
+    margin: 4rem auto 2.4rem;
+    padding: 3.2rem;
+    width: 450px;
+    height: 446px;
+
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 236, 240, 1);
+    border-radius: 16px;
+
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+    p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 19.36px;
+        letter-spacing: -0.02em;
+        color: $text-main-gray-dark;
+    }
+}
+
+.addTask {
+    width: 45rem;
+    margin: 0 auto;
+    padding: 16px 24px 16px 24px;
+    
+    background: linear-gradient(90deg, #0796D3 0%, #53C0F0 68.65%);
+    border: none;
+    border-radius: .8rem;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19.36px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 1);
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.openModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(0.0625rem);
+
+    width: 45rem;
+    height: 28.6rem;
+}
